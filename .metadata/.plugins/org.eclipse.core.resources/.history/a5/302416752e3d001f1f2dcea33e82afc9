@@ -1,0 +1,26 @@
+spring.application.name=ezio-ecomm
+#spring.Datasource.url=jdbc:mysql://localhost:3306/user
+#spring.Datasource.username=root
+#spring.Datasource.password=root
+spring.Datasource.url=jdbc:mysql://localhost:3306/user?serverTImezone=Asia/Kolkata
+spring.Datasource.username=e-commerce
+spring.Datasource.password=ecommerce
+
+
+spring.Datasource.driven-class-name=com.mysql.cj.jdbc.driver
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+
+#spring:
+#  resources:
+#    static-locations: classpath:/Resource/static/
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=bhagwatmohite2000@gmail.com
+spring.mail.password=ttwk voow jwnq zexx
+
+server.servlet.session.timeout=30m
+#server.servlet.session.cookie.name=JSESSIONID
+#server.servlet.session.cookie.http-only=true
+#server.servlet.session.cookie.secure=falsev
+

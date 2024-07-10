@@ -1,0 +1,28 @@
+package com.ecommerce.backend.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+
+import com.ecommerce.backend.entity.WishList;
+
+import com.ecommerce.backend.repository.WishListRepository;
+
+@Service
+public class WishListService {
+
+	@Autowired
+	private WishListRepository wishListRepository;
+	
+	public List<WishList> getAllWishList(){
+		return wishListRepository.findAll();
+	}
+	
+	public WishList createWishList(WishList wishList) {
+		return wishListRepository.save(wishList);
+	}
+	
+	
+}
